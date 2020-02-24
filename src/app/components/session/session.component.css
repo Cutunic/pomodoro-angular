@@ -1,0 +1,29 @@
+.session{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3,auto);
+}
+.name{
+    width: min-content;
+    grid-row: 1/4;
+    grid-column: 2;
+}
+.button{
+    margin: 0.4rem;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    width: 2rem;
+    height: 2rem;
+
+    font-weight: bold;
+}
+.name, .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plus, .minus{
+    font-weight: 1500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
