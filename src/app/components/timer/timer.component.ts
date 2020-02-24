@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timer.component.css']
 })
 export class TimerComponent implements OnInit {
-  counter: number = 25;
-  displayCounter: string = '25:00'
+  counter: number = 26.5*60;
 
   constructor() { }
 

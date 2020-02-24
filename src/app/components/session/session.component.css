@@ -7,6 +7,7 @@
     width: min-content;
     grid-row: 1/4;
     grid-column: 2;
+    padding-left: 0.5rem;
 }
 .button{
     margin: 0.4rem;
@@ -23,7 +24,16 @@
     align-items: center;
     justify-content: center;
 }
+
 .plus, .minus{
     font-weight: 1500;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.plus:active, .minus:active{
+    background-color: black;
+    color: white;
+}
+.plus:hover, .minus:hover{
+    transform: scale(1.2);
+    transition: 200ms transform ease-out;
 }
