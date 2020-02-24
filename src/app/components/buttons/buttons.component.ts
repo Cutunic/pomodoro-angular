@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClockService } from '../../services/clock.service';
 
 @Component({
   selector: 'app-buttons',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private clockService: ClockService) {
 
-  ngOnInit() {
   }
 
+  ngOnInit() {
+
+  }
+
+  onPlay(){
+    this.clockService.onPlay();
+  }
+  onPause(){
+    this.clockService.onPause();
+  }
+  onRefresh(){
+    this.clockService.onReset();
+  }
 }

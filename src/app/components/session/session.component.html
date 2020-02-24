@@ -1,6 +1,6 @@
 <div class="session">
-    <div class="button plus">+</div>
-    <div class="button state">25</div>
-    <div class="button minus">-</div>
+    <div class="button plus" (click)="onClick(+1)">+</div>
+    <div class="button state">{{ time }}</div>
+    <div class="button minus" (click)="onClick(-1)">-</div>
     <div class="name">S e s s  i o n</div>
 </div>
