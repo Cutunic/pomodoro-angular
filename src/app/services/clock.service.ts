@@ -75,6 +75,10 @@ export class ClockService {
       this.displayTime_.next(this.displayTime);
       console.log(this.displayTime);
       
+      if (this.displayTime === 5){
+        this.playAlarm();
+        console.log('play Alarm');
+      }
       if (this.displayTime===0){
         this.turn = !this.turn;
         if (this.turn===true){
@@ -85,4 +89,11 @@ export class ClockService {
       }
     }
   })
+  playAlarm(){
+    let alarm = new Audio();
+    alarm.src = "assets/alarm.mp3";
+    alarm.load;
+    alarm.volume = 1;
+    alarm.play;
+  }
 }
