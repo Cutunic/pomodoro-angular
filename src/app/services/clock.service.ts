@@ -73,11 +73,9 @@ export class ClockService {
 
       this.displayTime--;
       this.displayTime_.next(this.displayTime);
-      console.log(this.displayTime);
       
       if (this.displayTime === 5){
         this.playAlarm();
-        console.log('play Alarm');
       }
       if (this.displayTime===0){
         this.turn = !this.turn;

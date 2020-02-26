@@ -4,7 +4,6 @@
 }
 .button{
     margin: 0.4rem;
-    border: 1px solid black;
     border-radius: 50%;
 
     width: 2rem;
@@ -16,6 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow:
+    -2px -2px 4px rgba(255, 255, 255, 0.842),
+    2px 2px 4px rgba(0, 0, 0, 0.116);
 }
 
 .button:active{
