@@ -13,6 +13,8 @@ import { SessionComponent } from './components/session/session.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { TimerComponent } from './components/timer/timer.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { TimerComponent } from './components/timer/timer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
